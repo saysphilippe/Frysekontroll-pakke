@@ -23,7 +23,7 @@ const SPORSMAL = [
     { v: "iphone", t: "iPhone", s: "Du bruker appen Bluefy, siden Safari ikke kan snakke med skriveren." },
     { v: "pc", t: "Bare datamaskin", s: "Du bruker Chrome eller Edge." },
   ] },
-  { id: "skriver", tittel: "Har du en etikettskriver av typen Niimbot B21?", hjelp: { t: "Se skriveren hos produsenten", href: L.skriver }, bilde: { src: "niimbot-b21.jpg", alt: "Niimbot-etikettskriver i grønn, sett skrått ovenfra", tekst: "Niimbot B21 Pro. Bilde: Niimbot. Frysekontroll er laget og testet for B21." }, valg: [
+  { id: "skriver", tittel: "Har du en etikettskriver av typen Niimbot B21?", hjelp: { t: "Se skriveren hos produsenten", href: L.skriver }, bilde: { src: "niimbot-b21.jpg", alt: "Niimbot-etikettskriver i grønn, sett skrått ovenfra", tekst: "Niimbot B21. Bilde: Niimbot. Frysekontroll er laget og testet for denne skriveren." }, valg: [
     { v: "ja", t: "Ja", s: "Skriveren og en rull med etiketter." },
     { v: "nei", t: "Nei, ikke ennå", s: "Du kan sette alt opp nå og skrive ut etiketter når du har skriveren." },
   ] },

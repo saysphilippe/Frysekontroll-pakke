@@ -26,7 +26,7 @@ Alle varene på bildene er oppdiktede.
 
 **Alltid**
 
-<p align="center"><img src="public/niimbot-b21.jpg" width="260" alt="Niimbot-etikettskriver i grønn, sett skrått ovenfra"><br><sub>Niimbot B21 Pro. Bilde: Niimbot. Frysekontroll er laget og testet for B21.</sub></p>
+<p align="center"><img src="public/niimbot-b21.jpg" width="260" alt="Niimbot-etikettskriver i grønn, sett skrått ovenfra"><br><sub>Niimbot B21. Bilde: Niimbot. Frysekontroll er laget og testet for denne skriveren.</sub></p>
 
 - En liten etikettskriver av typen **Niimbot B21** ([se skriveren hos produsenten](https://www.niimbot.com/us/products/b21-bluetooth-thermal-label-printer)): en lommestor termoskriver som kobles til telefonen med Bluetooth, uten blekk, og som printer etiketter opptil 48 mm brede. Du trenger også etiketter til den. Etiketter på 40 × 20 mm er det appen kjenner best, men flere størrelser kan velges i appen. Har du skriveren, har du alt du trenger av utstyr.
 - En telefon. På **Android** bruker du Chrome. På **iPhone** bruker du appen **Bluefy**, siden Safari ikke kan snakke med skriveren. Firefox virker heller ikke.
