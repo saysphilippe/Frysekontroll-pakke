@@ -23,7 +23,7 @@ const SPORSMAL = [
     { v: "iphone", t: "iPhone", s: "Du bruker appen Bluefy, siden Safari ikke kan snakke med skriveren." },
     { v: "pc", t: "Bare datamaskin", s: "Du bruker Chrome eller Edge." },
   ] },
-  { id: "skriver", tittel: "Har du en etikettskriver av typen Niimbot B21?", hjelp: { t: "Se skriveren hos produsenten", href: L.skriver }, valg: [
+  { id: "skriver", tittel: "Har du en etikettskriver av typen Niimbot B21?", hjelp: { t: "Se skriveren hos produsenten", href: L.skriver }, bilde: { src: "niimbot-b21.jpg", alt: "Niimbot-etikettskriver i grønn, sett skrått ovenfra", tekst: "Niimbot B21 Pro. Bilde: Niimbot. Frysekontroll er laget og testet for B21." }, valg: [
     { v: "ja", t: "Ja", s: "Skriveren og en rull med etiketter." },
     { v: "nei", t: "Nei, ikke ennå", s: "Du kan sette alt opp nå og skrive ut etiketter når du har skriveren." },
   ] },
@@ -59,6 +59,7 @@ function visSporsmal(q, s, nr, totalt) {
     h("div", { class: "steg" }, `Spørsmål ${nr} av ${totalt}`),
     fremdrift(nr - 1, totalt),
     h("h1", {}, q.tittel),
+    q.bilde ? h("figure", { class: "produkt" }, h("img", { src: q.bilde.src, alt: q.bilde.alt, width: "220" }), h("figcaption", {}, q.bilde.tekst)) : null,
     h("div", { class: "valg", role: "group", "aria-label": q.tittel },
       q.valg.map((o) => h("a", { href: nesteHash(s, q.id, o.v), "aria-current": svar === o.v ? "true" : null }, h("b", {}, o.t), h("small", {}, o.s)))),
     q.hjelp ? h("p", { class: "muted" }, "Vet du ikke hva det er? ", lenke(q.hjelp.href, q.hjelp.t, "")) : null,
