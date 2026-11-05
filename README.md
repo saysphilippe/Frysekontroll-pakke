@@ -25,7 +25,7 @@ Alle varene på bildene er oppdiktede.
 ## Hva trenger du?
 
 **Alltid**
-- En etikettskriver av typen **Niimbot B21**, og etiketter til den. Etiketter på 40 × 20 mm er det appen kjenner best, men flere størrelser kan velges i appen. Har du skriveren, har du alt du trenger av utstyr.
+- En liten etikettskriver av typen **Niimbot B21** ([se skriveren hos produsenten](https://www.niimbot.com/us/products/b21-bluetooth-thermal-label-printer)): en lommestor termoskriver som kobles til telefonen med Bluetooth, uten blekk, og som printer etiketter opptil 48 mm brede. Du trenger også etiketter til den. Etiketter på 40 × 20 mm er det appen kjenner best, men flere størrelser kan velges i appen. Har du skriveren, har du alt du trenger av utstyr.
 - En telefon. På **Android** bruker du Chrome. På **iPhone** bruker du appen **Bluefy**, siden Safari ikke kan snakke med skriveren. Firefox virker heller ikke.
 - Skriveren kobles til med Bluetooth fra nettleseren. Ingen egen skriverapp trengs.
 

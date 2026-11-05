@@ -8,6 +8,7 @@ const L = {
   deploy: `https://deploy.workers.cloudflare.com/?url=https://github.com/${REPO}`,
   cloudflare: "https://dash.cloudflare.com/sign-up",
   github: "https://github.com/signup",
+  skriver: "https://www.niimbot.com/us/products/b21-bluetooth-thermal-label-printer",
   readme: `https://github.com/${REPO}#readme`,
   demo: `https://${OWNER}.github.io/${NAME}/`,
 };
@@ -22,7 +23,7 @@ const SPORSMAL = [
     { v: "iphone", t: "iPhone", s: "Du bruker appen Bluefy, siden Safari ikke kan snakke med skriveren." },
     { v: "pc", t: "Bare datamaskin", s: "Du bruker Chrome eller Edge." },
   ] },
-  { id: "skriver", tittel: "Har du en etikettskriver av typen Niimbot B21?", valg: [
+  { id: "skriver", tittel: "Har du en etikettskriver av typen Niimbot B21?", hjelp: { t: "Se skriveren hos produsenten", href: L.skriver }, valg: [
     { v: "ja", t: "Ja", s: "Skriveren og en rull med etiketter." },
     { v: "nei", t: "Nei, ikke ennå", s: "Du kan sette alt opp nå og skrive ut etiketter når du har skriveren." },
   ] },
@@ -60,6 +61,7 @@ function visSporsmal(q, s, nr, totalt) {
     h("h1", {}, q.tittel),
     h("div", { class: "valg", role: "group", "aria-label": q.tittel },
       q.valg.map((o) => h("a", { href: nesteHash(s, q.id, o.v), "aria-current": svar === o.v ? "true" : null }, h("b", {}, o.t), h("small", {}, o.s)))),
+    q.hjelp ? h("p", { class: "muted" }, "Vet du ikke hva det er? ", lenke(q.hjelp.href, q.hjelp.t, "")) : null,
     nr > 1 ? h("div", { class: "row" }, h("button", { class: "btn sec", type: "button", id: "tilbake" }, "Tilbake")) : null);
 }
 
@@ -89,9 +91,10 @@ function resultat(s) {
   const skriver = s.skriver === "ja"
     ? "Trykk «Koble til skriver» i appen. Finner du den ikke, bruk «Vis alle enheter (feilsøking)». Skriv ut en testetikett først for å se at størrelsen stemmer."
     : "Uten skriver kan du legge inn og søke i varer. Når du har fått B21, skriver du ut etikettene fra varens side. Du trenger ikke sette opp noe på nytt.";
+  const skriverLenke = lenke(L.skriver, "Se Niimbot B21 hos produsenten", "");
 
   const noter = [
-    telefon, skriver,
+    telefon, s.skriver === "ja" ? skriver : [skriver, " ", skriverLenke],
     familie ? "Alle med passordet kommer inn. Be familien åpne den samme adressen på sin egen telefon." : "Varene ligger bare i nettleseren på denne ene telefonen. Tømmer du nettleserdata eller bytter telefon, er de borte uten en sikkerhetskopi.",
     familie ? "Bildetolkingen bruker Cloudflares Workers AI, som har en daglig gratiskvote. Du kan la være å bruke den." : null,
   ].filter(Boolean);
