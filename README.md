@@ -4,6 +4,8 @@ Hva ligger i fryseren, og hvor? Ta bilde av maten, skriv ut en etikett med QR-ko
 
 Du trenger ikke kunne programmere. Du klikker deg gjennom noen få trinn, så har du din egen Frysekontroll. Det er gratis å sette opp (se «Hva koster det?» nederst).
 
+**Usikker på hvor du skal starte? Bruk veiviseren:** https://saysphilippe.github.io/Frysekontroll-pakke/start.html. Den stiller noen få spørsmål og gir deg riktige trinn for akkurat deg.
+
 | Varelisten | Én vare | Frys ned |
 |---|---|---|
 | ![Varelisten](docs/skjermbilder/01-varer.png) | ![Én vare med skriver og etiketter](docs/skjermbilder/03-vare.png) | ![Legg inn en ny vare](docs/skjermbilder/04-frys-ned.png) |
@@ -32,6 +34,8 @@ Alle varene på bildene er oppdiktede.
 - En gratis **Cloudflare-konto** (bare den delte varianten).
 
 ## Velg: bare du, eller hele familien?
+
+Den raskeste veien er [veiviseren](https://saysphilippe.github.io/Frysekontroll-pakke/start.html). Vil du heller lese selv, er valget slik:
 
 ```mermaid
 flowchart TD

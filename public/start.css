@@ -1,0 +1,18 @@
+/* Veiviseren (start.html). Bygger på style.css. */
+.steg { color: var(--muted); font-size: .9rem; font-weight: 600; }
+.fremdrift { display: flex; gap: 6px; }
+.fremdrift span { flex: 1; height: 6px; border-radius: 999px; background: var(--line); }
+.fremdrift span.ferdig { background: var(--brand); }
+.valg { display: grid; gap: 10px; }
+.valg a, .valg button { display: grid; gap: 2px; text-align: left; text-decoration: none; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px; font: inherit; cursor: pointer; min-height: 56px; }
+.valg a:hover, .valg button:hover { border-color: var(--brand); }
+.valg b { font-size: 1.05rem; }
+.valg small { color: var(--muted); font-size: .9rem; }
+.anbefalt { display: inline-block; justify-self: start; background: var(--brand); color: var(--brand-ink); border-radius: 999px; padding: 3px 12px; font-size: .85rem; font-weight: 700; }
+.trinn { margin: 0; padding-left: 1.3rem; display: grid; gap: 10px; }
+.trinn li::marker { font-weight: 800; color: var(--brand); }
+.knapper { display: flex; gap: 10px; flex-wrap: wrap; }
+.knapper a.btn { text-decoration: none; display: inline-flex; align-items: center; }
+.notater { margin: 0; padding-left: 1.2rem; display: grid; gap: 6px; }
+.resultat { display: grid; gap: var(--gap); min-width: 0; }
+a.btn { text-decoration: none; display: inline-flex; align-items: center; }
