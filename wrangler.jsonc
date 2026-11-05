@@ -1,0 +1,13 @@
+{
+  // Frysekontroll: API (/api/*) og nettsiden i samme Worker.
+  // Passordet settes som hemmelighet (FRYS_PASSWORD), se .dev.vars.example og README. Bildetolking bruker Workers AI (binding AI).
+  "name": "frysekontroll",
+  "main": "./src/worker.js",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": true, "html_handling": "auto-trailing-slash", "not_found_handling": "404-page" },
+  // Ingen database_id her: Cloudflare lager databasen for deg første gang du publiserer (Deploy-knappen eller `wrangler deploy`).
+  "d1_databases": [
+    { "binding": "DB", "database_name": "frysekontroll", "migrations_dir": "migrations" }
+  ],
+  "ai": { "binding": "AI" }
+}

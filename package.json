@@ -1,0 +1,16 @@
+{
+  "name": "frysekontroll",
+  "private": true,
+  "type": "module",
+  "description": "Frysekontroll: hva ligger i fryseren, og hvor. Bilde, etikett med QR (Niimbot B21), telling ned ved uttak. Cloudflare Worker + D1.",
+  "license": "MIT",
+  "scripts": {
+    "bygg:sider": "node scripts/bygg-sider.mjs",
+    "test": "node --test \"tests/**/*.test.mjs\"",
+    "dev": "wrangler d1 migrations apply DB --local && wrangler dev",
+    "deploy": "wrangler d1 migrations apply DB --remote && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.148.0"
+  }
+}

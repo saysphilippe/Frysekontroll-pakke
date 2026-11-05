@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<title>Frysekontroll</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0f4c5c">
+<meta name="apple-mobile-web-app-title" content="Frysekontroll">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/"><img class="logo" src="icon.svg" alt="" width="28" height="28">Frysekontroll</a>
+  <nav id="nav" class="nav" hidden>
+    <a href="#/" data-nav="liste">Varer</a>
+    <a href="#/ny" data-nav="ny">Frys ned</a>
+    <a href="#/steder" data-nav="steder">Steder</a>
+    <a href="#/familie" data-nav="familie">Familie</a>
+  </nav>
+</header>
+<main id="app" class="page" aria-live="polite"></main>
+<script src="qrcode.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

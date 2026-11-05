@@ -1,0 +1,23 @@
+name: CI
+
+# Tester på hver push og pull request. Publisering gjøres for hånd med `npm run deploy` (se README), siden Cloudflare-nøkkelen
+# ikke ligger i dette repoet ennå.
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
+    paths-ignore: ["**.md", "docs/**"]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test
