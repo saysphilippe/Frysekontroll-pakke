@@ -11,6 +11,6 @@
     "deploy": "wrangler d1 migrations apply DB --remote && wrangler deploy"
   },
   "devDependencies": {
-    "wrangler": "4.148.0"
+    "wrangler": "4.162.0"
   }
 }
